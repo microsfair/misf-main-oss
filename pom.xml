@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2015 Microsfair (http://www.microsfair.com)
+
+    Licensed under the Microsfair License, Version 1.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.microsfair.com/licenses/LICENSE-1.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.tawja</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.microsfair.oss</groupId>
+    <artifactId>parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+	
+    <packaging>pom</packaging>
+
+    <organization>
+        <name>Microsfair</name>
+        <url>http://www.microsfair.com</url>
+    </organization>
+
+    <name>Microsfair : Open-Source</name>
+    <description>Micro-Collaborative Platform &amp; Communities of Interests</description>
+    <!--<description>Plateforme Micro-Collaborative &amp; Communautés d'Intérêts</description>-->
+    <inceptionYear>2015</inceptionYear>
+
+    <url>${project.organization.url}/project/maven/misf-oss/</url>
+
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+    
+    <distributionManagement>
+        <site>
+            <id>microsfair-website</id>
+            <name>Microsfair Documentation Website</name>
+            <url>scp://deploy.microsfair.com/var/microsfair/deploy/prod/www/project/maven/misf-oss/</url>
+        </site>
+        <snapshotRepository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>microsfair-snapshots</id>
+            <name>Microsfair Snapshots Repository</name>
+            <url>scp://deploy.microsfair.com/var/microsfair/deploy/prod/www/repo/maven/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>microsfair-releases</id>
+            <name>Microsfair Releases Repository</name>
+            <url>scp://deploy.microsfair.com/var/microsfair/deploy/prod/www/repo/maven/releases</url>
+        </repository>
+    </distributionManagement>
+    
+    <scm>
+        <connection>scm:git@github.com:microsfair/misf-main-oss.git</connection>
+        <developerConnection>scm:git@bitbucket.org:microsfair/misf-main-oss.git</developerConnection>
+        <url>https://github.com/microsfair/misf-main-oss/tree/master</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>2.9</version>
+            </extension>
+        </extensions>
+    </build>
+
+</project>
