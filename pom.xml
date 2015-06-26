@@ -38,8 +38,8 @@
         <url>http://www.microsfair.com</url>
     </organization>
 
-    <name>Microsfair : Open-Source</name>
-    <description>Micro-Collaborative Platform &amp; Communities of Interests</description>
+    <name>Microsfair : OSS</name>
+    <description>Open-Source part of a Micro-Collaborative Platform &amp; Communities of Interests</description>
     <!--<description>Plateforme Micro-Collaborative &amp; Communautés d'Intérêts</description>-->
     <inceptionYear>2015</inceptionYear>
 
