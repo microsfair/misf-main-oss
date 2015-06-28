@@ -29,7 +29,7 @@
 
     <groupId>com.microsfair.oss</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.06.27002345</version>
+    <version>2015.06.29001912</version>
 	
     <packaging>pom</packaging>
 
