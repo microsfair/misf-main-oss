@@ -58,19 +58,19 @@
         <site>
             <id>microsfair-website</id>
             <name>Microsfair Documentation Website</name>
-            <url>scp://deploy.microsfair.com/var/microsfair/deploy/prod/www/project/maven/misf-oss/</url>
+            <url>scp://deploy.microsfair.com:8085/var/microsfair/deploy/prod/www/project/maven/misf-oss/</url>
         </site>
         <snapshotRepository>
             <uniqueVersion>false</uniqueVersion>
             <id>microsfair-snapshots</id>
             <name>Microsfair Snapshots Repository</name>
-            <url>scp://deploy.microsfair.com/var/microsfair/deploy/prod/www/repo/maven/snapshots</url>
+            <url>scp://deploy.microsfair.com:8085/var/microsfair/deploy/prod/www/repo/maven/snapshots</url>
         </snapshotRepository>
         <repository>
             <uniqueVersion>false</uniqueVersion>
             <id>microsfair-releases</id>
             <name>Microsfair Releases Repository</name>
-            <url>scp://deploy.microsfair.com/var/microsfair/deploy/prod/www/repo/maven/releases</url>
+            <url>scp://deploy.microsfair.com:8085/var/microsfair/deploy/prod/www/repo/maven/releases</url>
         </repository>
     </distributionManagement>
     
