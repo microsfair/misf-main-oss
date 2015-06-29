@@ -76,7 +76,7 @@
     
     <scm>
         <connection>scm:git@github.com:microsfair/misf-main-oss.git</connection>
-        <developerConnection>scm:git@bitbucket.org:microsfair/misf-main-oss.git</developerConnection>
+        <developerConnection>scm:git:git@bitbucket.org:microsfair/misf-main-oss.git</developerConnection>
         <url>https://github.com/microsfair/misf-main-oss/tree/master</url>
         <tag>HEAD</tag>
     </scm>
