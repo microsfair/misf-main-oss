@@ -43,7 +43,7 @@
     <!--<description>Plateforme Micro-Collaborative &amp; Communautés d'Intérêts</description>-->
     <inceptionYear>2015</inceptionYear>
 
-    <url>${project.organization.url}/project/maven/misf-oss/</url>
+    <url>${project.organization.url}/project/maven/oss/</url>
 
     <licenses>
         <license>
@@ -58,7 +58,7 @@
         <site>
             <id>microsfair-website</id>
             <name>Microsfair Documentation Website</name>
-            <url>scp://deploy.microsfair.com:8085/var/microsfair/deploy/prod/www/project/maven/misf-oss/</url>
+            <url>scp://deploy.microsfair.com:8085/var/microsfair/deploy/prod/www/project/maven/oss/</url>
         </site>
         <snapshotRepository>
             <uniqueVersion>false</uniqueVersion>
