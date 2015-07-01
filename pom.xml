@@ -58,6 +58,7 @@
         <site>
             <id>microsfair-website</id>
             <name>Microsfair Documentation Website</name>
+            <!-- TODO : Change to have a dedicated OSS Microsfair repository open for everybody (repo.micrsofair.com) with Archiva configuration as a remote -->
             <url>scp://deploy.microsfair.com:8085/var/microsfair/deploy/prod/www/project/oss/</url>
         </site>
         <snapshotRepository>
