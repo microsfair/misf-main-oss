@@ -43,7 +43,7 @@
     <!--<description>Plateforme Micro-Collaborative &amp; Communautés d'Intérêts</description>-->
     <inceptionYear>2015</inceptionYear>
 
-    <url>${project.organization.url}/project/oss/</url>
+    <url>${project.organization.url}/project/oss</url>
 
     <licenses>
         <license>
@@ -54,24 +54,42 @@
         </license>
     </licenses>
     
+	<properties>
+		<!-- Microsfair Open-Source parts are put in Tawja environment -->
+        <organization.domain>tawja.org</organization.domain>
+        <!-- Deployment Distribution -->
+        <tawja.deploy.protocol>scp</tawja.deploy.protocol>
+        <tawja.deploy.host>ftp.tawja.org</tawja.deploy.host>
+        <tawja.deploy.deployPath>/home/tawja/deploy</tawja.deploy.deployPath>
+        <tawja.deploy.webPath>/home/tawja/www</tawja.deploy.webPath>
+        <tawja.deploy.backupPath>/home/tawja/backup</tawja.deploy.backupPath>
+        <!-- Deployment Maven Site -->
+        <tawja.deploy.site.protocol>scp</tawja.deploy.site.protocol>
+        <tawja.deploy.site.host>ftp.tawja.org</tawja.deploy.site.host>
+        <tawja.deploy.site.webPath>/home/tawja/www</tawja.deploy.site.webPath>
+        <!-- Environment name with tawja-env-* profiles -->
+        <tawja.deploy.envName>test</tawja.deploy.envName>
+        <tawja.repo.envName>workspace</tawja.repo.envName>
+	</properties>
+	
     <distributionManagement>
         <site>
-            <id>microsfair-website</id>
-            <name>Microsfair Documentation Website</name>
+            <id>tawja-website</id>
+            <name>Microsfair OSS Documentation Website</name>
             <!-- TODO : Change to have a dedicated OSS Microsfair repository open for everybody (repo.micrsofair.com) with Archiva configuration as a remote -->
-            <url>scp://deploy.microsfair.com:8085/var/microsfair/deploy/prod/www/project/oss/</url>
+            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.webPath}/${tawja.deploy.envName}/project/oss</url>
         </site>
         <snapshotRepository>
             <uniqueVersion>false</uniqueVersion>
-            <id>microsfair-snapshots</id>
-            <name>Microsfair Snapshots Repository</name>
-            <url>scp://deploy.microsfair.com:8085/var/microsfair/deploy/prod/www/repo/maven/snapshots</url>
+            <id>tawja-snapshots</id>
+            <name>Microsfair OSS Snapshots Repository</name>
+            <url>${tawja.deploy.protocol}://${tawja.deploy.host}/${tawja.deploy.webPath}/${tawja.repo.envName}/${organization.domain}/repo/maven/snapshots</url>
         </snapshotRepository>
         <repository>
             <uniqueVersion>false</uniqueVersion>
-            <id>microsfair-releases</id>
-            <name>Microsfair Releases Repository</name>
-            <url>scp://deploy.microsfair.com:8085/var/microsfair/deploy/prod/www/repo/maven/releases</url>
+            <id>tawja-releases</id>
+            <name>Microsfair OSS Releases Repository</name>
+            <url>${tawja.deploy.protocol}://${tawja.deploy.host}/${tawja.deploy.webPath}/${tawja.repo.envName}/${organization.domain}/repo/maven/releases</url>
         </repository>
     </distributionManagement>
     
@@ -91,5 +109,82 @@
             </extension>
         </extensions>
     </build>
+
+    <repositories>
+        <!-- Tawja Snapshots Repository -->
+        <repository> 
+            <id>twj-snapshots-repository</id> 
+            <name>Tawja Snapshots Repository</name>
+            <url>http://www.tawja.org/repo/maven/snapshots</url> 
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <!-- Tawja Releases Repository -->
+        <repository> 
+            <id>twj-releases-repository</id> 
+            <name>Tawja Releases Repository</name>
+            <url>http://www.tawja.org/repo/maven/releases</url> 
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <!-- Tawja Releases LTS Repository -->
+        <repository> 
+            <id>twj-releases-lts-repository</id> 
+            <name>Tawja Releases LTS Repository</name>
+            <url>http://repo.tawja.org/maven/releases</url> 
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>	
+    <pluginRepositories>
+        <!-- Tawja Snapshots Repository -->
+        <pluginRepository> 
+            <id>twj-snapshots-repository</id> 
+            <name>Tawja Snapshots Repository</name>
+            <url>http://www.tawja.org/repo/maven/snapshots</url> 
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+        <!-- Tawja Releases Repository -->
+        <pluginRepository> 
+            <id>twj-releases-repository</id> 
+            <name>Tawja Releases Repository</name>
+            <url>http://www.tawja.org/repo/maven/releases</url> 
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <!-- Tawja Releases LTS Repository -->
+        <pluginRepository> 
+            <id>twj-releases-lts-repository</id> 
+            <name>Tawja Releases LTS Repository</name>
+            <url>http://repo.tawja.org/maven/releases</url> 
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+     </pluginRepositories>
 
 </project>

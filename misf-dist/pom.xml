@@ -18,7 +18,7 @@
 
     <name>Microsfair : OSS : Distribution</name>
 
-    <url>${project.organization.url}/project/oss/dist/</url>
+    <url>${project.organization.url}/project/oss/dist</url>
 
 	<!--
     <modules>
@@ -31,7 +31,7 @@
         <site>
             <id>microsfair-website</id>
             <name>Microsfair Documentation Website</name>
-            <url>scp://deploy.microsfair.com:8085/var/microsfair/deploy/prod/www/project/oss/dist/</url>
+            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.webPath}/${tawja.deploy.envName}/project/oss/dist</url>
         </site>
     </distributionManagement>
 
