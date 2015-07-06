@@ -34,8 +34,8 @@
     <packaging>pom</packaging>
 
     <organization>
-        <name>Microsfair</name>
-        <url>http://www.microsfair.com</url>
+        <name>Microsfair OSS</name>
+        <url>http://www.tawja.org/microsfair/project/oss</url>
     </organization>
 
     <name>Microsfair : OSS</name>
@@ -54,8 +54,8 @@
         </license>
     </licenses>
     
-	<properties>
-		<!-- Microsfair Open-Source parts are put in Tawja environment -->
+    <properties>
+        <!-- Microsfair Open-Source parts are put in Tawja environment -->
         <organization.domain>tawja.org</organization.domain>
         <!-- Deployment Distribution -->
         <tawja.deploy.protocol>scp</tawja.deploy.protocol>
@@ -70,26 +70,26 @@
         <!-- Environment name with tawja-env-* profiles -->
         <tawja.deploy.envName>test</tawja.deploy.envName>
         <tawja.repo.envName>workspace</tawja.repo.envName>
-	</properties>
+    </properties>
 	
     <distributionManagement>
         <site>
             <id>tawja-website</id>
             <name>Microsfair OSS Documentation Website</name>
             <!-- TODO : Change to have a dedicated OSS Microsfair repository open for everybody (repo.micrsofair.com) with Archiva configuration as a remote -->
-            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.webPath}/${tawja.deploy.envName}/project/oss</url>
+            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.webPath}/${tawja.deploy.envName}/${organization.domain}/microsfair/project/oss</url>
         </site>
         <snapshotRepository>
             <uniqueVersion>false</uniqueVersion>
             <id>tawja-snapshots</id>
             <name>Microsfair OSS Snapshots Repository</name>
-            <url>${tawja.deploy.protocol}://${tawja.deploy.host}/${tawja.deploy.webPath}/${tawja.repo.envName}/${organization.domain}/repo/maven/snapshots</url>
+            <url>${tawja.deploy.protocol}://${tawja.deploy.host}${tawja.deploy.webPath}/${tawja.repo.envName}/${organization.domain}/repo/maven/snapshots</url>
         </snapshotRepository>
         <repository>
             <uniqueVersion>false</uniqueVersion>
             <id>tawja-releases</id>
             <name>Microsfair OSS Releases Repository</name>
-            <url>${tawja.deploy.protocol}://${tawja.deploy.host}/${tawja.deploy.webPath}/${tawja.repo.envName}/${organization.domain}/repo/maven/releases</url>
+            <url>${tawja.deploy.protocol}://${tawja.deploy.host}${tawja.deploy.webPath}/${tawja.repo.envName}/${organization.domain}/repo/maven/releases</url>
         </repository>
     </distributionManagement>
     
@@ -185,6 +185,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
-     </pluginRepositories>
+    </pluginRepositories>
 
 </project>
