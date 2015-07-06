@@ -24,12 +24,12 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.04025015</version>
+        <version>2015.07.06040429</version>
     </parent>
 
     <groupId>com.microsfair.oss</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.04051603</version>
+    <version>2015.07.06044523</version>
 	
     <packaging>pom</packaging>
 
