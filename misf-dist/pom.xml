@@ -10,7 +10,7 @@
         <!--<relativePath>../pom.xml</relativePath>-->
     </parent>
 	
-    <groupId>com.microsfair.oss.distribution</groupId>
+    <groupId>com.microsfair.oss.dist</groupId>
     <artifactId>parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 	
