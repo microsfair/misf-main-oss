@@ -24,12 +24,12 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.06120601</version>
+        <version>2015.07.06174146</version>
     </parent>
 
     <groupId>com.microsfair.oss</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.06154821</version>
+    <version>2015.07.06200628</version>
 	
     <packaging>pom</packaging>
 
@@ -132,7 +132,7 @@
                 <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
         <!-- Tawja Releases LTS Repository -->
@@ -144,7 +144,7 @@
                 <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>	
@@ -170,7 +170,7 @@
                 <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
         <!-- Tawja Releases LTS Repository -->
@@ -182,7 +182,7 @@
                 <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
