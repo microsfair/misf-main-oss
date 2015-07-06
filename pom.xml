@@ -24,12 +24,12 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.06040429</version>
+        <version>2015.07.06120601</version>
     </parent>
 
     <groupId>com.microsfair.oss</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.06044523</version>
+    <version>2015.07.06154821</version>
 	
     <packaging>pom</packaging>
 
@@ -69,7 +69,7 @@
         <tawja.deploy.site.webPath>/home/tawja/www</tawja.deploy.site.webPath>
         <!-- Environment name with tawja-env-* profiles -->
         <tawja.deploy.envName>test</tawja.deploy.envName>
-        <tawja.repo.envName>workspace</tawja.repo.envName>
+        <tawja.repo.envName>www</tawja.repo.envName>
     </properties>
 	
     <distributionManagement>
