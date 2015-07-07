@@ -206,7 +206,7 @@
             <dependency>
                 <groupId>org.tawja.maven</groupId>
                 <artifactId>twj-maven-utils</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
+                <version>${twj-maven-utils.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
