@@ -24,12 +24,12 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.07125135</version>
+        <version>2015.07.08183918</version>
     </parent>
 
     <groupId>com.microsfair.oss</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.07133400</version>
+    <version>2015.07.08184908</version>
 	
     <packaging>pom</packaging>
 
@@ -68,7 +68,7 @@
         <tawja.deploy.site.host>ftp.tawja.org</tawja.deploy.site.host>
         <tawja.deploy.site.webPath>/home/tawja/www</tawja.deploy.site.webPath>
         <!-- Inner Dependencies Versions -->
-        <twj-maven-utils.version>2015.07.07125135</twj-maven-utils.version>
+        <twj-maven-utils.version>2015.07.08183918</twj-maven-utils.version>
     </properties>
 	
     <profiles>
@@ -97,13 +97,13 @@
             <uniqueVersion>false</uniqueVersion>
             <id>tawja-snapshots</id>
             <name>Microsfair OSS Snapshots Repository</name>
-            <url>${tawja.deploy.protocol}://${tawja.deploy.host}${tawja.deploy.webPath}/${tawja.repo.envName}/${organization.domain}/repo/maven/snapshots</url>
+            <url>${tawja.deploy.protocol}://${tawja.deploy.host}${tawja.deploy.webPath}/${tawja.repo.envName}/repo/maven/snapshots</url>
         </snapshotRepository>
         <repository>
             <uniqueVersion>false</uniqueVersion>
             <id>tawja-releases</id>
             <name>Microsfair OSS Releases Repository</name>
-            <url>${tawja.deploy.protocol}://${tawja.deploy.host}${tawja.deploy.webPath}/${tawja.repo.envName}/${organization.domain}/repo/maven/releases</url>
+            <url>${tawja.deploy.protocol}://${tawja.deploy.host}${tawja.deploy.webPath}/${tawja.repo.envName}/repo/maven/releases</url>
         </repository>
     </distributionManagement>
     
