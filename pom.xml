@@ -91,7 +91,7 @@
             <id>tawja-website</id>
             <name>Microsfair OSS Documentation Website</name>
             <!-- TODO : Change to have a dedicated OSS Microsfair repository open for everybody (repo.micrsofair.com) with Archiva configuration as a remote -->
-            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.webPath}/${tawja.deploy.envName}/${organization.domain}/microsfair/project/oss</url>
+            <url>${tawja.deploy.site.protocol}://${tawja.deploy.site.host}${tawja.deploy.site.webPath}/${tawja.deploy.envName}/${organization.domain}/microsfair/project/oss</url>
         </site>
         <snapshotRepository>
             <uniqueVersion>false</uniqueVersion>
