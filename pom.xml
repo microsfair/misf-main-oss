@@ -24,12 +24,12 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>2015.07.08183918</version>
     </parent>
 
     <groupId>com.microsfair.oss</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>2015.07.08184908</version>
 	
     <packaging>pom</packaging>
 
@@ -68,7 +68,7 @@
         <tawja.deploy.site.host>ftp.tawja.org</tawja.deploy.site.host>
         <tawja.deploy.site.webPath>/home/tawja/www</tawja.deploy.site.webPath>
         <!-- Inner Dependencies Versions -->
-        <twj-maven-utils.version>1.0.0-SNAPSHOT</twj-maven-utils.version>
+        <twj-maven-utils.version>2015.07.08183918</twj-maven-utils.version>
     </properties>
 	
     <profiles>
