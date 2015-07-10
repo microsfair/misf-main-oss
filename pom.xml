@@ -24,12 +24,12 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>2015.07.10164706</version>
     </parent>
 
     <groupId>com.microsfair.oss</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>2015.07.10170406</version>
 	
     <packaging>pom</packaging>
 
@@ -70,7 +70,7 @@
         <tawja.deploy.site.webPath>/home/tawja/www</tawja.deploy.site.webPath>
         <tawja.deploy.site.backupPath>/home/tawja/backup</tawja.deploy.site.backupPath>
         <!-- Inner Dependencies Versions -->
-        <twj-maven-utils.version>1.0.0-SNAPSHOT</twj-maven-utils.version>
+        <twj-maven-utils.version>2015.07.10164706</twj-maven-utils.version>
     </properties>
 	
     <profiles>
