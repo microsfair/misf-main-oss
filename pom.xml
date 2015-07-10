@@ -59,10 +59,10 @@
         <organization.domain>tawja.org</organization.domain>
         <!-- Deployment Distribution -->
         <tawja.deploy.protocol>scp</tawja.deploy.protocol>
-        <tawja.deploy.host>ftp.tawja.org</tawja.deploy.host>
-        <tawja.deploy.deployPath>/home/tawja/deploy</tawja.deploy.deployPath>
-        <tawja.deploy.webPath>/home/tawja/www</tawja.deploy.webPath>
-        <tawja.deploy.backupPath>/home/tawja/backup</tawja.deploy.backupPath>
+        <tawja.deploy.host>deploy.tawja.org:8085</tawja.deploy.host>
+        <tawja.deploy.deployPath>/var/tawja/deploy</tawja.deploy.deployPath>
+        <tawja.deploy.webPath>/var/tawja/www</tawja.deploy.webPath>
+        <tawja.deploy.backupPath>/var/tawja/backup</tawja.deploy.backupPath>
         <!-- Deployment Maven Site -->
         <tawja.deploy.site.protocol>scp</tawja.deploy.site.protocol>
         <tawja.deploy.site.host>ftp.tawja.org</tawja.deploy.site.host>
@@ -131,7 +131,7 @@
         <repository> 
             <id>twj-snapshots-repository</id> 
             <name>Tawja Snapshots Repository</name>
-            <url>http://www.tawja.org/repo/maven/snapshots</url> 
+            <url>http://tawja.microsfair.com/repo/maven/snapshots</url> 
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -143,7 +143,7 @@
         <repository> 
             <id>twj-releases-repository</id> 
             <name>Tawja Releases Repository</name>
-            <url>http://www.tawja.org/repo/maven/releases</url> 
+            <url>http://tawja.microsfair.com/repo/maven/releases</url> 
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -169,7 +169,7 @@
         <pluginRepository> 
             <id>twj-snapshots-repository</id> 
             <name>Tawja Snapshots Repository</name>
-            <url>http://www.tawja.org/repo/maven/snapshots</url> 
+            <url>http://tawja.microsfair.com/repo/maven/snapshots</url> 
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -181,7 +181,7 @@
         <pluginRepository> 
             <id>twj-releases-repository</id> 
             <name>Tawja Releases Repository</name>
-            <url>http://www.tawja.org/repo/maven/releases</url> 
+            <url>http://tawja.microsfair.com/repo/maven/releases</url> 
             <releases>
                 <enabled>true</enabled>
             </releases>
