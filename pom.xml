@@ -24,12 +24,12 @@
     <parent>
         <groupId>org.tawja</groupId>
         <artifactId>parent</artifactId>
-        <version>2015.07.10164706</version>
+        <version>2015.07.11162619</version>
     </parent>
 
     <groupId>com.microsfair.oss</groupId>
     <artifactId>parent</artifactId>
-    <version>2015.07.10170406</version>
+    <version>2015.07.11174840</version>
 	
     <packaging>pom</packaging>
 
@@ -70,7 +70,7 @@
         <tawja.deploy.site.webPath>/home/tawja/www</tawja.deploy.site.webPath>
         <tawja.deploy.site.backupPath>/home/tawja/backup</tawja.deploy.site.backupPath>
         <!-- Inner Dependencies Versions -->
-        <twj-maven-utils.version>2015.07.10164706</twj-maven-utils.version>
+        <twj-maven-utils.version>2015.07.11162619</twj-maven-utils.version>
     </properties>
 	
     <profiles>
@@ -148,7 +148,7 @@
                 <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
         <!-- Tawja Releases LTS Repository -->
@@ -160,7 +160,7 @@
                 <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
     </repositories>	
@@ -186,7 +186,7 @@
                 <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
         <!-- Tawja Releases LTS Repository -->
@@ -198,7 +198,7 @@
                 <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
