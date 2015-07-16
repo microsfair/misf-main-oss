@@ -35,7 +35,7 @@
             <!-- Use '.min' CDN resources -->
             <minifiedResources>true</minifiedResources>
             <!-- Make this to 'false' for local development, i.e. file:// URLs  or to force http: use -->
-            <protocolRelativeURLs>false</protocolRelativeURLs>
+            <protocolRelativeURLs>true</protocolRelativeURLs>
             <!-- Use site theme to have local theme only (not bootwatch cdn link) -->
             <!-- "site" theme with localResources=true is used for pure corporate sites or documentation -->
             <theme>default</theme>
